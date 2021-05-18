@@ -1,12 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Configuration;
 using OdeToCode.Core;
 using OdeToCone.Data;
+using System.Collections.Generic;
 
 namespace OdeToCode.Pages.Code_sites
 {
@@ -23,10 +19,12 @@ namespace OdeToCode.Pages.Code_sites
             this.config = config;
             this.restaurantData = restaurantData;
         }
-        public void OnGet()
+        public void OnGet(string searchTerm)
         {
+            
+
             Message = config["Message"];
-            Restaurants = restaurantData.GetAll();
+            Restaurants = restaurantData.GetRestaurantsByName(searchTerm);
         }
     }
 }

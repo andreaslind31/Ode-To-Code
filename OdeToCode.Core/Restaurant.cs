@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace OdeToCode.Core
+﻿namespace OdeToCode.Core
 {
     public class Restaurant
     {

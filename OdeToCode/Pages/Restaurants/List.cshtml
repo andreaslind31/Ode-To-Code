@@ -4,22 +4,32 @@
 }
 
 <h1>Restaurants</h1>
-
+<form method="get">
+    <div class="form-group">
+        <div class="input-group">
+            <input type="search" class="form-control" placeholder="Search for restaurant..."
+                   value="" name="searchTerm" />
+            <span class="input-group-btn">
+                <button class="btn btn-default">Go!</button>
+            </span>
+        </div>
+    </div>
+</form>
 <table class="table">
-    @foreach(var restaurants in Model.Restaurants)
-            {
-                <tr>
-                    <td>
-                        @restaurants.Name
-                    </td>
-                    <td>
-                        @restaurants.Location
-                    </td>
-                    <td>
-                        @restaurants.Cuisine
-                    </td>
-                </tr>
-            }
+    @foreach (var restaurants in Model.Restaurants)
+    {
+        <tr>
+            <td>
+                @restaurants.Name
+            </td>
+            <td>
+                @restaurants.Location
+            </td>
+            <td>
+                @restaurants.Cuisine
+            </td>
+        </tr>
+    }
 </table>
 
 <div>@Model.Message</div>
