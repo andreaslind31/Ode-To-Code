@@ -1,32 +1,36 @@
-﻿@page
+﻿@page 
 @model OdeToCode.Pages.Code_sites.ListModel
 @{
 }
 
 <h1>Restaurants</h1>
+
 <form method="get">
     <div class="form-group">
         <div class="input-group">
             <input type="search" class="form-control" placeholder="Search for restaurant..."
-                   value="" name="searchTerm" />
+                   asp-for="SearchTerm" />
             <span class="input-group-btn">
-                <button class="btn btn-default">Go!</button>
+                <button class="btn">Go!</button>
             </span>
         </div>
     </div>
 </form>
 <table class="table">
-    @foreach (var restaurants in Model.Restaurants)
+    @foreach (var restaurant in Model.Restaurants)
     {
         <tr>
             <td>
-                @restaurants.Name
+                <a class="btn" asp-page="./Detail" asp-route-restaurantId="@restaurant.Id">@restaurant.Name</a>
             </td>
             <td>
-                @restaurants.Location
+                @restaurant.Location
             </td>
             <td>
-                @restaurants.Cuisine
+                @restaurant.Cuisine
+            </td>
+            <td>
+                <a class="btn" asp-page="./Detail" asp-route-restaurantId="@restaurant.Id">Details</a>
             </td>
         </tr>
     }

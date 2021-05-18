@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OdeToCode", "OdeToCode\OdeToCode.csproj", "{221207A6-618B-4EAB-B72C-3393DED52447}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OdeToCode.Core", "OdeToCode.Core\OdeToCode.Core.csproj", "{B74BA182-BECA-4848-A32C-E1721C56B73A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OdeToCode.Core", "OdeToCode.Core\OdeToCode.Core.csproj", "{B74BA182-BECA-4848-A32C-E1721C56B73A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OdeToCone.Data", "OdeToCone.Data\OdeToCone.Data.csproj", "{F14ECCD6-5E9C-4C03-A646-C56BC691EE8B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OdeToCone.Data", "OdeToCone.Data\OdeToCone.Data.csproj", "{F14ECCD6-5E9C-4C03-A646-C56BC691EE8B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

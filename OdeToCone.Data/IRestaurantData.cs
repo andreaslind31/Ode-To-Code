@@ -7,6 +7,7 @@ namespace OdeToCone.Data
     public interface IRestaurantData
     {
         IEnumerable<Restaurant> GetRestaurantsByName(string name);
+        Restaurant GetById(int Id);
     }
     public class InMemoryRestaurantData : IRestaurantData
     {
@@ -29,8 +30,13 @@ namespace OdeToCone.Data
                 new Restaurant{Id = 10, Name ="Prästgatan", Location="Varberg", Cuisine=CuisineType.Swedish}
             };
         }
+        public Restaurant GetById(int id)
+        {
+            return restaurants.SingleOrDefault(r => r.Id == id);
+        }
         public IEnumerable<Restaurant> GetRestaurantsByName(string name = null)
         {
+
             return from r in restaurants
                    where string.IsNullOrEmpty(name) || r.Name.StartsWith(name)
                    orderby r.Location
