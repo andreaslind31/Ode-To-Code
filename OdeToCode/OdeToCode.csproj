@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\OdeToCone.Data\OdeToCone.Data.csproj" />
+    <ProjectReference Include="..\OdeToCone.Data\OdeToCode.Data.csproj" />
   </ItemGroup>
 
 </Project>

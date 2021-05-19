@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OdeToCode", "OdeToCode\OdeT
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OdeToCode.Core", "OdeToCode.Core\OdeToCode.Core.csproj", "{B74BA182-BECA-4848-A32C-E1721C56B73A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OdeToCone.Data", "OdeToCone.Data\OdeToCone.Data.csproj", "{F14ECCD6-5E9C-4C03-A646-C56BC691EE8B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OdeToCode.Data", "OdeToCone.Data\OdeToCode.Data.csproj", "{F14ECCD6-5E9C-4C03-A646-C56BC691EE8B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -5,13 +5,15 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using OdeToCode.Core;
-using OdeToCone.Data;
+using OdeToCode.Data;
 
 namespace OdeToCode.Pages.Restaurants
 {
     public class DetailModel : PageModel
     {
         private readonly IRestaurantData restaurantData;
+        [TempData]
+        public string Message { get; set; }
         public Restaurant Restaurant { get; set; }
 
         public DetailModel(IRestaurantData restaurantData)
